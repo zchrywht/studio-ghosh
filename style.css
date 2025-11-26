@@ -1,0 +1,42 @@
+body {
+    font-family: 'Swis721 BT', sans-serif;
+    font-size: 16pt;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+}
+
+#logo {
+    width: 200px;
+    height: 54px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    flex-shrink: 0;
+}
+
+#screw {
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#coming-soon {
+    width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    flex-shrink: 0;
+}

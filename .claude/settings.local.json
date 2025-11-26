@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xcopy \"00_Website\\img\" \"img\"\" /E /I /Y)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
