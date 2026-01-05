@@ -1,6 +1,6 @@
 body {
     font-family: 'Swis721 BT', sans-serif;
-    font-size: 16pt;
+    font-size: 12pt;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -34,7 +34,7 @@ a {
 }
 
 #coming-soon {
-    width: 540px;
+    width: 400px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
