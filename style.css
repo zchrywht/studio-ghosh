@@ -1,9 +1,6 @@
 body {
     font-family: 'Swis721 BT', sans-serif;
-    font-size: 12pt;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    font-size: 10pt;
     margin: 0;
     padding: 0;
 }
@@ -18,25 +15,25 @@ a {
     background-color: black;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     flex-shrink: 0;
 }
 
 #screw {
-    width: 400px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
     margin-left: auto;
     margin-right: auto;
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 #coming-soon {
-    width: 400px;
+    width: 320px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 40px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     flex-shrink: 0;
 }
