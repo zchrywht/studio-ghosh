@@ -1,3 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
 body {
     font-family: 'Swis721 BT', sans-serif;
     font-size: 10pt;
@@ -9,31 +18,264 @@ a {
     color: black;
 }
 
+header {
+    width: 100%;
+    padding: 40px ;
+    text-align: left;
+}
+
 #logo {
     width: 200px;
     height: 54px;
     background-color: black;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    flex-shrink: 0;
+}
+
+main {
+    width: 100%;
+    height: calc(100vh - 134px);
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.page {
+    flex: 0 0 50%;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.left-half {
+    position: relative;
+}
+
+.right-half {
+    position: relative;
 }
 
 #screw {
     width: 200px;
     height: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 60px;
-    margin-bottom: 60px;
 }
 
 #coming-soon {
     width: 320px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 60px;
-    margin-bottom: 60px;
     flex-shrink: 0;
+}
+
+/* Table of contents */
+#toc {
+    width: 100%;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+.toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.toc-item {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: -1px;
+}
+
+.toc-link {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    padding: 18px 0;
+}
+
+.toc-link.dimmed {
+    color: #e7e7e7;
+}
+
+.splash-preview {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.splash-preview img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Project page styles */
+.project-splash {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-splash img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.project-info {
+    max-width: 600px;
+    text-align: left;
+    padding-left: 80px;
+    margin-right: auto;
+}
+
+.project-info h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.project-info p {
+    margin: 8px 0;
+}
+
+.project-info .credits {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.project-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.image-counter {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+/* Gallery styles */
+.project-gallery {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.gallery-category {
+    margin-bottom: 30px;
+}
+
+.gallery-category h3 {
+    margin: 0 0 15px 0;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.gallery-thumbnail {
+    aspect-ratio: 1;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.gallery-thumbnail img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: box-shadow 0.2s ease;
+}
+
+.gallery-thumbnail:hover img {
+    box-shadow: 2px 2px 0 0 black;
+}
+
+.gallery-thumbnail.active img {
+    box-shadow: 4px 4px 0 0 black;
+}
+
+/* Full image view styles */
+.project-image-view {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-image-view img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 6px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+}
+
+::-webkit-scrollbar-button:single-button {
+    display: none;
+    height: 0;
+    width: 0;
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+    display: none;
+    height: 0;
+    width: 0;
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: black transparent;
 }

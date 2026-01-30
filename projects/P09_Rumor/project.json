@@ -1,0 +1,63 @@
+{
+    "id": "P01",
+    "title": "Rumor",
+    "program":"Concept Store and Cafe",
+    "address": "Av Sonora 204\nHipódromo, Cuauhtémoc, 06100\nCiudad de México, CDMX, México",
+    "area": "525 ft2 / 48 m2",
+    "year": "2024",
+    "credits": {
+        "Project Leads":"Ayesha S Ghosh, Alicja Wozniak",
+        "Project Contractor":"Sr Felipe",
+        "Photographer":"Francesc Pascual Torrens",
+        "Client":"Tatiana Cueva"
+    },
+    "description": "Rumor is a concept store and café designed in collaboration between Studio Ghosh and Alicja Wozniak for fashion designer Tatiana Cueva, situated at the intersection of Sonora and Amsterdam in Mexico City. Located along a pedestrian street lined with greenery, the space occupies an Art Deco building whose street facade features a distinctive band of green terrazzo. The storefront is divided into two distinct experiences: on the left, a frameless glass entrance invites visitors into the jewel-like retail interior, while on the right, an open sidewalk café engages directly with the street.\nThe spatial strategy employs a single angled line that cuts across the plan from the center of the front facade to a truncated mirrored wall at the back, creating a forced perspective. This geometric division organizes the program clearly: café, dressing room, and bathroom occupy one side, with browsing space on the other.",
+    "images": {
+        "final_dressed": [
+            "./img/02_Final Photos/PHOTO_DRESSED/24-10-06 RUMOR AG_RAW_01_DSC_8310.jpg",
+            "./img/02_Final Photos/PHOTO_DRESSED/24-10-06 RUMOR AG_RAW_01_DSC_8672.jpg",
+            "./img/02_Final Photos/PHOTO_DRESSED/24-10-06 RUMOR AG_RAW_01_DSC_8684.jpg",
+            "./img/02_Final Photos/PHOTO_DRESSED/24-10-06 RUMOR AG_RAW_01_DSC_8732.jpg",
+            "./img/02_Final Photos/PHOTO_DRESSED/24-10-06 RUMOR AG_RAW_01_DSC_8767.jpg",
+            "./img/02_Final Photos/PHOTO_DRESSED/24-10-06 RUMOR AG_RAW_01_DSC_8785.jpg",
+            "./img/02_Final Photos/PHOTO_DRESSED/24-10-06 RUMOR AG_RAW_01_DSC_8964.jpg",
+            "./img/02_Final Photos/PHOTO_DRESSED/24-10-06 RUMOR AG_RAW_01_DSC_9016.jpg",
+            "./img/02_Final Photos/PHOTO_DRESSED/24-10-06 RUMOR AG_RAW_01_DSC_9069.jpg",
+            "./img/02_Final Photos/PHOTO_DRESSED/24-10-06 RUMOR AG_RAW_01_DSC_9107.jpg",
+            "./img/02_Final Photos/PHOTO_DRESSED/24-10-06 RUMOR AG_RAW_01_DSC_9181.jpg",
+            "./img/02_Final Photos/PHOTO_DRESSED/24-10-06 RUMOR AG_RAW_01_DSC_9281_HIGH.jpg",
+            "./img/02_Final Photos/PHOTO_DRESSED/24-10-06 RUMOR AG_RAW_01_DSC_9284_HIGH.jpg",
+            "./img/02_Final Photos/PHOTO_DRESSED/24-10-06 RUMOR AG_RAW_02_DSC_9314_HIGH.jpg",
+            "./img/02_Final Photos/PHOTO_DRESSED/24-10-06 RUMOR AG_RAW_02_DSC_9321_HIGH.jpg",
+            "./img/02_Final Photos/PHOTO_DRESSED/24-10-06 RUMOR AG_RAW_02_DSC_9337.jpg"
+        ],
+        "final_blank": [
+            "./img/02_Final Photos/PHOTO_BLANK/24-10-06 RUMOR AG_RAW_01_DSC_8525.jpg",
+            "./img/02_Final Photos/PHOTO_BLANK/24-10-06 RUMOR AG_RAW_01_DSC_8575.jpg",
+            "./img/02_Final Photos/PHOTO_BLANK/24-10-06 RUMOR AG_RAW_01_DSC_8604.jpg",
+            "./img/02_Final Photos/PHOTO_BLANK/24-10-06 RUMOR AG_RAW_01_DSC_9232.jpg",
+            "./img/02_Final Photos/PHOTO_BLANK/24-10-06 RUMOR AG_RAW_02_DSC_9509.jpg",
+            "./img/02_Final Photos/PHOTO_BLANK/24-10-06 RUMOR AG_RAW_02_DSC_9514.jpg",
+            "./img/02_Final Photos/PHOTO_BLANK/24-10-06 RUMOR AG_RAW_02_DSC_9537.jpg",
+            "./img/02_Final Photos/PHOTO_BLANK/24-10-06 RUMOR AG_RAW_02_DSC_9543.jpg",
+            "./img/02_Final Photos/PHOTO_BLANK/24-10-06 RUMOR AG_RAW_02_DSC_9547.jpg",
+            "./img/02_Final Photos/PHOTO_BLANK/24-10-06 RUMOR AG_RAW_02_DSC_9559.jpg",
+            "./img/02_Final Photos/PHOTO_BLANK/24-10-06 RUMOR AG_RAW_02_DSC_9566.jpg"
+        ],
+        "in_process": [
+            "./img/03_In Process Photos/DSC_4658.jpg",
+            "./img/03_In Process Photos/DSC_4663.jpg",
+            "./img/03_In Process Photos/DSC_4720.jpg",
+            "./img/03_In Process Photos/DSC_4900.jpg",
+            "./img/03_In Process Photos/DSC_4923.jpg",
+            "./img/03_In Process Photos/DSC_4973.jpg",
+            "./img/03_In Process Photos/DSC_5059.jpg"
+        ],
+        "drawings": [
+            "./img/04_Drawings/AI_Image.jpg",
+            "./img/04_Drawings/Details.svg",
+            "./img/04_Drawings/Section 01.svg",
+            "./img/04_Drawings/Section 02.svg"
+        ]
+    }
+}
