@@ -37,7 +37,7 @@ function setupSortHeaders() {
     const header = document.querySelector('.grid-header');
     const columns = ['id', 'name', 'year', 'program', 'area', 'location', ''];
 
-    header.querySelectorAll('span').forEach((span, index) => {
+    header.querySelectorAll(':scope > span').forEach((span, index) => {
         const column = columns[index];
 
         if (sortableColumns.includes(column)) {
@@ -64,7 +64,7 @@ function setupFilterHeaders() {
     const header = document.querySelector('.grid-header');
     const columns = ['id', 'name', 'year', 'program', 'area', 'location', ''];
 
-    header.querySelectorAll('span').forEach((span, index) => {
+    header.querySelectorAll(':scope > span').forEach((span, index) => {
         const column = columns[index];
 
         if (filterableColumns.includes(column)) {
@@ -131,7 +131,7 @@ function closeAllDropdowns() {
 
 function updateFilterIndicators() {
     const header = document.querySelector('.grid-header');
-    header.querySelectorAll('span').forEach(span => {
+    header.querySelectorAll(':scope > span').forEach(span => {
         const column = span.dataset.filter;
         if (!column) return;
 
@@ -155,7 +155,7 @@ function updateFilterIndicators() {
 
 function updateSortIndicators() {
     const header = document.querySelector('.grid-header');
-    header.querySelectorAll('span').forEach(span => {
+    header.querySelectorAll(':scope > span').forEach(span => {
         const existingArrow = span.querySelector('.sort-arrow');
         if (existingArrow) existingArrow.remove();
 
