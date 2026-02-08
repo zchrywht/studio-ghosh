@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="wrapper">
     <header>
         <div id="logo">
             <img src="./img/Logo.svg" alt="Studio Ghosh">
@@ -14,21 +15,21 @@
         <div id="locations">cdmx, mx / nyc, usa</div>
     </header>
 
-    <div id="content-wrapper">
-        <aside id="left-sidebar">
-            <nav id="sort-options">
-                <div class="sort-option active" data-sort="year">year</div>
-                <div class="sort-option" data-sort="program">program</div>
-                <div class="sort-option" data-sort="location">location</div>
-            </nav>
-        </aside>
-
-        <main>
-            <div id="project-grid"></div>
-        </main>
-
-        <aside id="right-sidebar"></aside>
-    </div>
+    <main>
+        <div id="project-grid">
+            <div class="grid-header">
+                <span class="col-id">id</span>
+                <span class="col-name">name</span>
+                <span class="col-year">year</span>
+                <span class="col-program">program</span>
+                <span class="col-area">area</span>
+                <span class="col-location">location</span>
+                <span class="col-thumb"></span>
+            </div>
+            <div class="grid-body" id="project-body">
+            </div>
+        </div>
+    </main>
 
     <footer>
         <div id="email">
@@ -39,6 +40,7 @@
             all rights reserved 2026
         </div>
     </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>

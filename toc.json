@@ -69,14 +69,6 @@
             "area_sqft": 1693
         },
         {
-            "id": "P08",
-            "name": "Above Eden",
-            "directory": "./projects/P08_Above-Eden/",
-            "program": "Residential",
-            "year": 2024,
-            "location": "Syracuse, NY, USA"
-        },
-        {
             "id": "P09",
             "name": "Rumor",
             "directory": "./projects/P09_Rumor/",
