@@ -1,0 +1,106 @@
+{
+    "projects": [
+        {
+            "id": "P01",
+            "name": "Feromonas",
+            "directory": "./projects/P01_Feromonas/",
+            "program": "Fashion, Show",
+            "year": 2022,
+            "location": "CDMX, México",
+            "area_sqm": 53,
+            "area_sqft": 570
+        },
+        {
+            "id": "P02",
+            "name": "Cueva",
+            "directory": "./projects/P02_Cueva/",
+            "program": "Fashion, Show",
+            "year": 2023,
+            "location": "CDMX, México",
+            "area_sqm": 22,
+            "area_sqft": 240
+        },
+        {
+            "id": "P03",
+            "name": "Rave Flags",
+            "directory": "./projects/P03_Rave-Flags/",
+            "program": "Art Installation",
+            "year": 2023,
+            "location": "CDMX, México"
+        },
+        {
+            "id": "P04",
+            "name": "Cyberstreams",
+            "directory": "./projects/P04_Cyberstreams/",
+            "program": "Research & Exhibition",
+            "year": 2021,
+            "location": "CDMX, México",
+            "area_sqm": 56,
+            "area_sqft": 603
+        },
+        {
+            "id": "P05",
+            "name": "A Soñar A Soñar",
+            "directory": "./projects/P05_Ceremonia/",
+            "program": "Fashion, Popup",
+            "year": 2023,
+            "location": "CDMX, México",
+            "area_sqm": 100,
+            "area_sqft": 1076
+        },
+        {
+            "id": "P06",
+            "name": "WiG",
+            "directory": "./projects/P06_WiG/",
+            "program": "Fashion, Retail",
+            "year": 2023,
+            "location": "CDMX, México",
+            "area_sqm": 243,
+            "area_sqft": 2615
+        },
+        {
+            "id": "P07",
+            "name": "Tumbao",
+            "directory": "./projects/P07_Tumbao/",
+            "program": "Fashion, Retail",
+            "year": 2023,
+            "location": "NYC, NY, USA",
+            "area_sqm": 157,
+            "area_sqft": 1693
+        },
+        {
+            "id": "P09",
+            "name": "Rumor",
+            "directory": "./projects/P09_Rumor/",
+            "program": "Fashion, Retail",
+            "year": 2024,
+            "location": "CDMX, México"
+        },
+        {
+            "id": "P10",
+            "name": "Animals",
+            "directory": "./projects/P10_Animals/",
+            "program": "Research & Exhibition",
+            "year": 2024,
+            "location": "Syracuse, NY, USA"
+        },
+        {
+            "id": "P12",
+            "name": "In Process",
+            "directory": "./projects/P12_In-Process/",
+            "program": "Research & Exhibition",
+            "year": 2025,
+            "location": "Syracuse, NY, USA"
+        },
+        {
+            "id": "P13",
+            "name": "Banzo",
+            "directory": "./projects/P13_Banzo/",
+            "program": "Fashion, Popup",
+            "year": 2025,
+            "location": "NYC, NY, USA",
+            "area_sqm": 33,
+            "area_sqft": 350
+        }
+    ]
+}
