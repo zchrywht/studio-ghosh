@@ -1,15 +1,11 @@
 :root {
     --max-width: 1600px;
+    --cell-pad: 20px;
+    --thumb-size: 160px;
+    --col: calc(var(--thumb-size) + 2 * var(--cell-pad));
     --col-id: 60px;
-    --col-name: 200px;
-    --col-year: 80px;
-    --col-program: 180px;
-    --col-area: 100px;
-    --col-location: 150px;
     /* Total fixed columns width */
-    --cols-fixed: calc(var(--col-id) + var(--col-name) + var(--col-year) + var(--col-program) + var(--col-area) + var(--col-location));
-    /* Detail row height */
-    --detail-height: 400px;
+    --cols-fixed: calc(var(--col-id) + 6 * var(--col));
 }
 
 * {
@@ -25,6 +21,7 @@ html, body {
 body {
     font-family: 'Swis721 BT', sans-serif;
     font-size: 10pt;
+    background: white;
 }
 
 #wrapper {
@@ -40,8 +37,8 @@ header {
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    max-width: var(--max-width);
-    padding: 40px;
+    max-width: var(--cols-fixed);
+    padding: 40px 0;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -59,8 +56,8 @@ footer {
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    max-width: var(--max-width);
-    padding: 40px;
+    max-width: var(--cols-fixed);
+    padding: 40px 0;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -88,8 +85,7 @@ main {
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    max-width: var(--max-width);
-    padding: 0 40px;
+    max-width: var(--cols-fixed);
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -100,12 +96,14 @@ main {
     display: flex;
     flex-direction: column;
     height: 100%;
+    max-width: var(--cols-fixed);
+    margin: 0 auto;
 }
 
 .grid-header,
 .grid-row {
     display: grid;
-    grid-template-columns: var(--col-id) var(--col-name) var(--col-year) var(--col-program) var(--col-area) var(--col-location) 1fr;
+    grid-template-columns: var(--col-id) repeat(6, var(--col));
 }
 
 .grid-header {
@@ -114,15 +112,19 @@ main {
     text-transform: uppercase;
     letter-spacing: 0.05em;
     border-bottom: 1px solid black;
-    padding-bottom: 12px;
 }
 
-.grid-header span {
-    padding: 8px 16px 8px 0;
+/* Consistent cell padding across all grid rows */
+.grid-header > span,
+.grid-row > span,
+.detail-row > div,
+.detail-row > .detail-images-container {
+    padding: var(--cell-pad);
 }
 
 .grid-header .sortable {
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .grid-header .sortable:hover {
@@ -194,13 +196,8 @@ main {
 /* Project rows */
 .grid-row {
     cursor: pointer;
-    height: 120px;
-    align-items: center;
+    align-items: end;
     border-bottom: 1px solid #eee;
-}
-
-.grid-row span {
-    padding: 8px 16px 8px 0;
 }
 
 .grid-row:hover {
@@ -211,55 +208,89 @@ main {
     text-decoration: underline;
 }
 
+span.col-id {
+    padding-left: 0;
+}
+
+.col-year,
+.col-area {
+    text-align: right;
+}
+
+span.col-area {
+    padding-right: 0;
+}
+
 .col-thumb {
     display: flex;
-    gap: 8px;
+    align-items: center;
     overflow: hidden;
 }
 
 .row-thumb {
-    height: 80px;
-    width: auto;
+    width: var(--thumb-size);
+    height: var(--thumb-size);
+    object-fit: cover;
     flex-shrink: 0;
 }
 
 /* Expanded detail row */
 .detail-row {
     display: grid;
-    grid-template-columns: var(--col-id) var(--col-name) var(--col-year) var(--col-program) var(--col-area) var(--col-location) 1fr;
+    grid-template-columns: var(--col-id) repeat(6, var(--col));
     border-bottom: 1px solid #eee;
     height: 0;
     overflow: hidden;
     transition: height 0.4s ease-out;
 }
 
-.detail-row.open {
-    height: var(--detail-height);
+/* .detail-row.open height is set dynamically by JS */
+
+.detail-images-container {
+    grid-column: 2 / 5; /* Under thumb, name, year */
 }
 
-.detail-team {
-    grid-column: 1 / 3; /* Under ID, name */
-    padding: 20px 16px 20px 0;
+.detail-images {
+    display: grid;
+    grid-template-columns: repeat(3, var(--thumb-size));
+    gap: calc(2 * var(--cell-pad));
+    align-content: start;
+}
+
+.detail-images img {
+    width: var(--thumb-size);
+    height: var(--thumb-size);
+    object-fit: contain;
+}
+
+.image-placeholder {
+    width: var(--thumb-size);
+    height: var(--thumb-size);
+}
+
+.image-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: var(--cell-pad);
+}
+
+.folder-link {
+    cursor: pointer;
+}
+
+.folder-link:hover {
+    text-decoration: underline;
+}
+
+.folder-link.active {
+    text-decoration: underline;
 }
 
 .detail-info {
-    grid-column: 3 / 6; /* Under year, program, area */
-    padding: 20px 16px 20px 0;
-}
-
-.detail-image {
-    grid-column: 7; /* Thumbnail column */
+    grid-column: 5 / 8; /* Under program, area, location */
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: var(--detail-height);
-    overflow: hidden;
-}
-
-.detail-image img {
-    max-height: 100%;
-    max-width: calc(100% - 40px);
-    object-fit: contain;
+    flex-direction: column;
 }
 
 .image-arrow {
@@ -354,4 +385,18 @@ main {
 .detail-description {
     margin: 0;
     line-height: 1.5;
+}
+
+.wip-link {
+    margin-top: auto;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.wip-link:hover {
+    text-decoration: underline;
+}
+
+html.inverted {
+    filter: invert(1);
 }
